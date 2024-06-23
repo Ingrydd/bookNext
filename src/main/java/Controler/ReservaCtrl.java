@@ -1,13 +1,18 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package Controler;
+import Model.Reserva;
 
-/**
- *
- * @author ingry
- */
 public class ReservaCtrl {
+    String statusPagamento;    
+    int dataInicio;
+    int dataFim;
+    int numQuarto;
+    int idReserva;
     
+    public ReservaCtrl(){
+        //abrir conexão com o banco de dados
+    }
+    
+    public void cancelaReserva(Reserva reserva){
+        System.out.println("Reserva cancelada com sucesso!");
+    }
 }

@@ -1,6 +1,7 @@
 package View;
 import Model.Funcionario;
 import Controler.FuncionarioCtrl;
+import dao.FuncionarioDAO;
 
 public class FuncionarioGUI extends javax.swing.JFrame {
 
@@ -122,6 +123,8 @@ public class FuncionarioGUI extends javax.swing.JFrame {
         fun.setTelefone(Integer.parseInt(tfTelefone.getText()));
         FuncionarioCtrl ctrl = new FuncionarioCtrl();
         ctrl.cadastraHospede(fun);
+        FuncionarioDAO dao = new FuncionarioDAO();
+        dao.inserirF(fun);
     }//GEN-LAST:event_btnCadastrarActionPerformed
 
     /**

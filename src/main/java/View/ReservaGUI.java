@@ -1,6 +1,7 @@
 package View;
 import Model.Reserva;
 import Controler.ReservaCtrl;
+import dao.ReservaDAO;
 
 public class ReservaGUI extends javax.swing.JFrame {
 
@@ -122,6 +123,8 @@ public class ReservaGUI extends javax.swing.JFrame {
         reserva.setNumQuarto(Integer.parseInt(tfNumQuarto.getText()));
         ReservaCtrl ctrl = new ReservaCtrl();
         ctrl.cancelaReserva(reserva);
+        ReservaDAO dao = new ReservaDAO();
+        dao.inserirR(reserva);        
     }//GEN-LAST:event_btnCadastrarActionPerformed
 
     /**

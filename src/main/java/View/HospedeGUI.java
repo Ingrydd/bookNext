@@ -1,6 +1,7 @@
 package View;
 import Model.Hospede;
 import Controler.HospedeCtrl;
+import dao.HospedeDAO;
 
 public class HospedeGUI extends javax.swing.JFrame {
 
@@ -133,6 +134,8 @@ public class HospedeGUI extends javax.swing.JFrame {
         hospede.setAvaliacao(tfAvaliacao.getText());
         HospedeCtrl ctrl = new HospedeCtrl();
         ctrl.adicionaAvaliacao(hospede);
+        HospedeDAO dao = new HospedeDAO();
+        dao.inserirH(hospede);
     }//GEN-LAST:event_btnCadastrarActionPerformed
 
     /**

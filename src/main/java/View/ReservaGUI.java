@@ -6,6 +6,7 @@ public class ReservaGUI extends javax.swing.JFrame {
 
     public ReservaGUI() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**

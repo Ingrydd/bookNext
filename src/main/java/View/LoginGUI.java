@@ -19,6 +19,7 @@ public class LoginGUI extends javax.swing.JFrame {
      */
     public LoginGUI() {
         initComponents();
+        setLocationRelativeTo(null);
         acessarButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {

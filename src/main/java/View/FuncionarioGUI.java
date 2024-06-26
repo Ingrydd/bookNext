@@ -6,6 +6,7 @@ public class FuncionarioGUI extends javax.swing.JFrame {
 
     public FuncionarioGUI() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**

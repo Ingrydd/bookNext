@@ -6,6 +6,7 @@ public class HospedeGUI extends javax.swing.JFrame {
 
     public HospedeGUI() {
         initComponents();
+        setLocationRelativeTo(null);
     }
 
     /**

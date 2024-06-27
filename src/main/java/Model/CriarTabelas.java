@@ -17,7 +17,7 @@ public class CriarTabelas {
         Statement st = null;
         String sqlFuncionario = "CREATE TABLE Funcionario ("
                 + "nome VARCHAR(255) NOT NULL,"
-                + "numFuncionario INT PRIMARY KEY NOT NULL,"
+                + "numFuncionario INT AUTO_INCREMENT PRIMARY KEY NOT NULL,"
                 + "telefone INT,"
                 + "cpf INT NOT NULL UNIQUE)";
 
@@ -25,7 +25,7 @@ public class CriarTabelas {
                 + "avaliacao VARCHAR(255),"
                 + "email VARCHAR(255),"
                 + "nome VARCHAR(255) NOT NULL,"
-                + "idHospede INT PRIMARY KEY NOT NULL,"
+                + "idHospede INT AUTO_INCREMENT PRIMARY KEY NOT NULL,"
                 + "telefone INT,"
                 + "idade INT,"
                 + "cpf INT NOT NULL UNIQUE)";
@@ -35,7 +35,7 @@ public class CriarTabelas {
                 + "dataInicio DATE NOT NULL,"
                 + "dataFim DATE NOT NULL,"
                 + "numQuarto INT NOT NULL,"
-                + "idReserva INT PRIMARY KEY NOT NULL)";
+                + "idReserva INT AUTO_INCREMENT PRIMARY KEY NOT NULL)";
         
         try{
             Class.forName(driver);

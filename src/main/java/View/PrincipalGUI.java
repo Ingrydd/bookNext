@@ -35,7 +35,7 @@ public class PrincipalGUI extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(234, 234, 252));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
-        lblTituloPrincipal.setFont(new java.awt.Font("Segoe Print", 1, 12)); // NOI18N
+        lblTituloPrincipal.setFont(new java.awt.Font("Segoe Script", 1, 12)); // NOI18N
         lblTituloPrincipal.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTituloPrincipal.setText("BookNext");
 
@@ -152,7 +152,7 @@ public class PrincipalGUI extends javax.swing.JFrame {
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

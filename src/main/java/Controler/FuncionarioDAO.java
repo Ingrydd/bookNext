@@ -1,4 +1,4 @@
-package dao;
+package Controler;
 
 import Model.Funcionario;
 import java.sql.DriverManager;

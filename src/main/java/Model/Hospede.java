@@ -1,21 +1,12 @@
 package Model;
 
 public class Hospede {
-    String avaliacao;
     String email;
     String nome;
     int idHospede;
     int telefone;
     int idade;
     int cpf;
-
-    public String getAvaliacao() {
-        return avaliacao;
-    }
-
-    public void setAvaliacao(String avaliacao) {
-        this.avaliacao = avaliacao;
-    }
 
     public String getEmail() {
         return email;

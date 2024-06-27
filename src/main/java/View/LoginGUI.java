@@ -74,7 +74,6 @@ public class LoginGUI extends javax.swing.JFrame {
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
         senhaField.setForeground(new java.awt.Color(102, 102, 102));
-        senhaField.setText("jPasswordField1");
 
         matriculaLabel.setText("Matrícula:");
 

@@ -10,7 +10,7 @@ public class CriarTabelas {
     static String url = "jdbc:mysql://localhost:3306/hotel";
     static String driver = "com.mysql.cj.jdbc.Driver";
     static String user = "root";
-    static String senha = "suasenha";
+    static String senha = "123456";
     
     public static void main(String[] args){
         Connection conn = null;
@@ -22,7 +22,6 @@ public class CriarTabelas {
                 + "cpf INT NOT NULL UNIQUE)";
 
         String sqlHospede = "CREATE TABLE Hospede ("
-                + "avaliacao VARCHAR(255),"
                 + "email VARCHAR(255),"
                 + "nome VARCHAR(255) NOT NULL,"
                 + "idHospede INT AUTO_INCREMENT PRIMARY KEY NOT NULL,"

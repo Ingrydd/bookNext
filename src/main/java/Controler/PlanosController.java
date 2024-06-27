@@ -19,7 +19,7 @@ public class PlanosController {
     }
 
     public void adicionarPlano(String nomePlano, int valorPlano, String tipoPlano, String duracaoPlano) {
-        Planos plano = new Planos(nomePlano, valorPlano, tipoPlano, duracaoPlano);
+        Planos plano = new Planos(nomePlano, duracaoPlano, tipoPlano, valorPlano);
         planos.add(plano);
         atualizarTabela();
     }

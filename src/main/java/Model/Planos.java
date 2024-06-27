@@ -11,11 +11,11 @@ public class Planos {
     String tipoPlano;
     String duracaoPlano;
     
-    public Planos(String nomePlano, int valorPlano, String tipoPlano, String duracaoPlano) {
+    public Planos(String nomePlano, String duracaoPlano, String tipoPlano, int valorPlano) {
         this.nomePlano = nomePlano;
-        this.valorPlano = valorPlano;
-        this.tipoPlano = tipoPlano;
         this.duracaoPlano = duracaoPlano;
+        this.tipoPlano = tipoPlano;
+        this.valorPlano = valorPlano;
     }
 
     public String getNomePlano() {

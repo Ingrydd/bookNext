@@ -20,8 +20,10 @@ Nosso sistema foi desenvolvido para um projeto da disciplina de Programação Or
 1. Tela de Login: Insira suas credenciais para acessar o sistema.
 2. Tela Principal: Escolha uma opção do menu para continuar.
 3. Tela de Cadastro de Hóspede: Insira os dados do hóspede.
-4. Tela de Reserva: Efetue uma nova reserva.
-5. Tela de Avaliação: Permita que o hóspede deixe uma avaliação após o término da reserva.
+4. Tela de Reserva: Cancele uma reserva.
+5. Tela de Cadastro de Quarto: Cadastrar quarto.
+6. Tela de Cadastro de Funcionário: Cadastre o funcionário.
+7. Tela de Planos: Cadastro de planos disponíveis para os clientes.
 
 ## Autores
 

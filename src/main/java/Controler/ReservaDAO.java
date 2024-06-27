@@ -42,4 +42,70 @@ public class ReservaDAO {
             System.out.println(ex);
         }
     }
+    
+    public Reserva buscarR(int idReserva) {
+        Connection conn = null;
+        PreparedStatement ps = null;
+        ResultSet rs = null;
+        Reserva reserva = null;
+
+        try {
+            Class.forName(driver);
+            conn = DriverManager.getConnection(url, user, senha);
+            String sql = "SELECT * FROM Reserva WHERE idReserva = ?";
+            ps = conn.prepareStatement(sql);
+            ps.setInt(1, idReserva);
+            rs = ps.executeQuery();
+
+            if (rs.next()) {
+                reserva = new Reserva();
+                reserva.setStatusPagamento(rs.getString("statusPagamento"));
+                reserva.setDataInicio(rs.getInt("dataInicio"));
+                reserva.setDataFim(rs.getInt("dataFim"));
+                reserva.setNumQuarto(rs.getInt("numQuarto"));
+                reserva.setIdReserva(rs.getInt("idReserva"));
+            }
+        } catch (Exception ex) {
+            System.out.println(ex);
+        }    
+        return reserva;
+    }
+    
+    public void atualizar(Reserva reserva) {
+        Connection conn = null;
+        PreparedStatement ps = null;
+
+        try {
+            Class.forName(driver);
+            conn = DriverManager.getConnection(url, user, senha);
+            String sql = "UPDATE Reserva SET statusPagamento = ?, dataInicio = ?, dataFim = ?, numQuarto = ?, idReserva = ? WHERE idReserva = ?";
+            ps = conn.prepareStatement(sql);
+            ps.setString(1, reserva.getStatusPagamento());
+            ps.setInt(2, reserva.getDataInicio());
+            ps.setInt(3, reserva.getDataFim());
+            ps.setInt(4, reserva.getNumQuarto());
+            ps.setInt(5, reserva.getIdReserva());
+            ps.executeUpdate();
+        } catch (Exception ex) {
+            System.out.println(ex);
+        }
+    }
+    
+    public void deletar(int idReserva) {
+        Connection conn = null;
+        PreparedStatement ps = null;
+
+        try {
+            Class.forName(driver);
+            conn = DriverManager.getConnection(url, user, senha);
+            String sql = "DELETE FROM Reserva WHERE idReserva = ?";
+            ps = conn.prepareStatement(sql);
+            ps.setInt(1, idReserva);
+            ps.executeUpdate();
+        } catch (Exception ex) {
+            System.out.println(ex);
+        }    
+    }
+
+    
 }

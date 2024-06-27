@@ -24,9 +24,9 @@ public class PrincipalGUI extends javax.swing.JFrame {
         btnHospede = new javax.swing.JButton();
         btnFuncionario = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton5 = new javax.swing.JButton();
+        hotelButton = new javax.swing.JButton();
+        planosButton = new javax.swing.JButton();
+        quartoButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Menu Principal");
@@ -117,17 +117,22 @@ public class PrincipalGUI extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
-        jButton1.setBackground(new java.awt.Color(204, 204, 255));
-        jButton1.setFont(new java.awt.Font("Bodoni MT", 0, 18)); // NOI18N
-        jButton1.setText("Hotel");
+        hotelButton.setBackground(new java.awt.Color(204, 204, 255));
+        hotelButton.setFont(new java.awt.Font("Bodoni MT", 0, 18)); // NOI18N
+        hotelButton.setText("Hotel");
 
-        jButton2.setBackground(new java.awt.Color(204, 204, 255));
-        jButton2.setFont(new java.awt.Font("Bodoni MT", 0, 18)); // NOI18N
-        jButton2.setText("Planos");
+        planosButton.setBackground(new java.awt.Color(204, 204, 255));
+        planosButton.setFont(new java.awt.Font("Bodoni MT", 0, 18)); // NOI18N
+        planosButton.setText("Planos");
 
-        jButton5.setBackground(new java.awt.Color(204, 204, 255));
-        jButton5.setFont(new java.awt.Font("Bodoni MT", 0, 18)); // NOI18N
-        jButton5.setText("Quartos");
+        quartoButton.setBackground(new java.awt.Color(204, 204, 255));
+        quartoButton.setFont(new java.awt.Font("Bodoni MT", 0, 18)); // NOI18N
+        quartoButton.setText("Quartos");
+        quartoButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                quartoButtonActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
@@ -136,22 +141,22 @@ public class PrincipalGUI extends javax.swing.JFrame {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(hotelButton, javax.swing.GroupLayout.PREFERRED_SIZE, 266, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(planosButton, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
-                        .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(quartoButton, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(19, 19, 19))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(hotelButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton5, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(planosButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(quartoButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
@@ -196,6 +201,11 @@ public class PrincipalGUI extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_btnHospedeActionPerformed
 
+    private void quartoButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_quartoButtonActionPerformed
+        new CadQuartoGUI().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_quartoButtonActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -214,13 +224,13 @@ public class PrincipalGUI extends javax.swing.JFrame {
     private javax.swing.JButton btnFuncionario;
     private javax.swing.JButton btnHospede;
     private javax.swing.JButton btnReservas;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton5;
+    private javax.swing.JButton hotelButton;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JLabel lblTitulo;
     private javax.swing.JLabel lblTituloPrincipal;
+    private javax.swing.JButton planosButton;
+    private javax.swing.JButton quartoButton;
     // End of variables declaration//GEN-END:variables
 }

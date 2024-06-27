@@ -35,7 +35,7 @@ public class PrincipalGUI extends javax.swing.JFrame {
         jPanel1.setBackground(new java.awt.Color(234, 234, 252));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(""));
 
-        lblTituloPrincipal.setFont(new java.awt.Font("Segoe Script", 1, 12)); // NOI18N
+        lblTituloPrincipal.setFont(new java.awt.Font("Segoe Script", 1, 18)); // NOI18N
         lblTituloPrincipal.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTituloPrincipal.setText("BookNext");
 
@@ -48,7 +48,7 @@ public class PrincipalGUI extends javax.swing.JFrame {
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(9, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(lblTituloPrincipal)
                 .addContainerGap())
         );
@@ -120,6 +120,11 @@ public class PrincipalGUI extends javax.swing.JFrame {
         hotelButton.setBackground(new java.awt.Color(204, 204, 255));
         hotelButton.setFont(new java.awt.Font("Bodoni MT", 0, 18)); // NOI18N
         hotelButton.setText("Hotel");
+        hotelButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                hotelButtonActionPerformed(evt);
+            }
+        });
 
         planosButton.setBackground(new java.awt.Color(204, 204, 255));
         planosButton.setFont(new java.awt.Font("Bodoni MT", 0, 18)); // NOI18N
@@ -211,10 +216,16 @@ public class PrincipalGUI extends javax.swing.JFrame {
         dispose();
     }//GEN-LAST:event_quartoButtonActionPerformed
 
+
     private void planosButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planosButtonActionPerformed
         new PlanosGUI().setVisible(true);
         dispose();
     }//GEN-LAST:event_planosButtonActionPerformed
+
+    private void hotelButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_hotelButtonActionPerformed
+        
+    }//GEN-LAST:event_hotelButtonActionPerformed
+
 
     /**
      * @param args the command line arguments

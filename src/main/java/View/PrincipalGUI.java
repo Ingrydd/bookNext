@@ -124,6 +124,11 @@ public class PrincipalGUI extends javax.swing.JFrame {
         planosButton.setBackground(new java.awt.Color(204, 204, 255));
         planosButton.setFont(new java.awt.Font("Bodoni MT", 0, 18)); // NOI18N
         planosButton.setText("Planos");
+        planosButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                planosButtonActionPerformed(evt);
+            }
+        });
 
         quartoButton.setBackground(new java.awt.Color(204, 204, 255));
         quartoButton.setFont(new java.awt.Font("Bodoni MT", 0, 18)); // NOI18N
@@ -205,6 +210,11 @@ public class PrincipalGUI extends javax.swing.JFrame {
         new CadQuartoGUI().setVisible(true);
         dispose();
     }//GEN-LAST:event_quartoButtonActionPerformed
+
+    private void planosButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_planosButtonActionPerformed
+        new PlanosGUI().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_planosButtonActionPerformed
 
     /**
      * @param args the command line arguments

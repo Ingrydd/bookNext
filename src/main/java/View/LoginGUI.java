@@ -1,22 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package View;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author bruna
- */
 public class LoginGUI extends javax.swing.JFrame {
 
-    /**
-     * Creates new form LoginGUI
-     */
     public LoginGUI() {
         initComponents();
         setLocationRelativeTo(null);

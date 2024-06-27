@@ -14,7 +14,7 @@ public class ReservaDAO {
     static String url = "jdbc:mysql://localhost:3306/hotel";
     static String driver = "com.mysql.cj.jdbc.Driver";
     static String user = "root";
-    static String senha = "123456";
+    static String senha = "suasenha";
 
     public void inserirR(Reserva reserva){
         Connection conn = null;

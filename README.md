@@ -17,7 +17,7 @@ Nosso sistema foi desenvolvido para um projeto da disciplina de Programação Or
 
 ## Como você pode utilizar
 
-1. Tela de Login: Insira suas credenciais para acessar o sistema.
+1. Tela de Login: Insira suas credenciais para acessar o sistema (Matrícula: admin e Senha: admin).
 2. Tela Principal: Escolha uma opção do menu para continuar.
 3. Tela de Cadastro de Hóspede: Cadastro dos dados do hóspede.
 4. Tela de Reserva: Cadastrar uma reserva.

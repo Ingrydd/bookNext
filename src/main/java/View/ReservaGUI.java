@@ -76,7 +76,7 @@ public class ReservaGUI extends javax.swing.JFrame {
 
         lblPagamento.setText("Pagamento:");
 
-        lblExplicacao.setText("Atenção: Data no formato (YYYY-MM-DD)");
+        lblExplicacao.setText("Atenção: Data no formato (YY-MM-DD)");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

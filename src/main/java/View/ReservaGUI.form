@@ -182,7 +182,7 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblExplicacao">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Aten&#xe7;&#xe3;o: Data no formato (YYYY-MM-DD)"/>
+        <Property name="text" type="java.lang.String" value="Aten&#xe7;&#xe3;o: Data no formato (YY-MM-DD)"/>
       </Properties>
     </Component>
   </SubComponents>
